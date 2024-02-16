@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "watcher"
+version = "0.1.0"
+description = "Utility tool to configure commands on file changes"
+authors = ["Vipul Sharma <vipul.sharma20@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+watchdog = "^4.0.0"
+PyYAML = "^6.0.1"
+docopt = "^0.6.2"
+
+[tool.poetry.scripts]
+watcher = "watcher.cli:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
